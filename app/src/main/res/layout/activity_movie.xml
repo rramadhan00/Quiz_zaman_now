@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="id.kasep.rramadhan.aplikasiquiz.MovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:src="@drawable/movie_quiz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/body"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/pertanyaanmovie"
+            android:layout_width="360dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:text="Pertanyaan"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/buttonA_movie"
+            android:text="Jawaban A"
+
+            />
+
+        <Button
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/buttonB_movie"
+            android:text="Jawaban B"
+            android:background="@color/colorAccent"
+
+            />
+
+        <Button
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/buttonC_movie"
+            android:text="Jawaban C"
+
+            />
+
+        <Button
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD_movie"
+            android:text="Jawaban D"
+            android:background="@color/colorAccent"
+
+            />
+
+        <Button
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/next_movie"
+            android:text="NEXT"
+
+            />
+
+        <Button
+            android:id="@+id/lihat_score"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="LIHAT SCORE"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/copyright"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
